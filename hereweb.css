@@ -13,7 +13,6 @@ body {
 #Result {
     position: fixed; /* Sit on top of the page content */
     display: block; /* Hidden by default */
-    overflow: scroll;
     width: fit-content; /* Full width (cover the whole page) */
     height: fit-content; /* Full height (cover the whole page) */
     top: 0;
