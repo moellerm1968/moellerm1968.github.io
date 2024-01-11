@@ -1,0 +1,106 @@
+
+#map {
+    width: 100vw;
+    height: 100vh;
+    background: grey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#Result {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    overflow: scroll;
+    width: fit-content; /* Full width (cover the whole page) */
+    height: fit-content; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(13, 14, 13, 0); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+#ErweiterteEinstellungen{
+    display: none;
+} 
+
+.table-wrapper{
+    margin: 5px 5px 5px;
+}
+
+.tabelle {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid #0c0c0c;
+    border-collapse: collapse;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color:  rgba(13, 14, 13, 0.2);
+}
+
+.tabelle td, .tabelle th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #0c0c0c;
+}
+
+.tabelle thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.tabelle thead th:first-child{
+    background: #4FC3A1;
+}
+
+.spalte1{
+    background: #4FC3A1;
+}  
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .tabelle {
+        display: block;
+        width: 100%;
+    }
+
+    .tabelle thead, .tabelle tbody, .tabelle thead th {
+        display: block;
+    }
+    .tabelle thead {
+        float: left;
+    }
+    .tabelle tbody {
+        width: auto;
+        position: top;
+        overflow-x: auto;
+    }
+    .tabelle td, .tabelle th {
+        height: 40px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100px;
+        text-overflow: ellipsis;
+    }
+    .tabelle thead th {
+        text-align: left;
+        width: 160px;
+    }
+    .tabelle tbody tr {
+        display: table-cell;
+    }
+    .tabelle tbody td {
+        display: block;
+        text-align: center;
+    }
+}

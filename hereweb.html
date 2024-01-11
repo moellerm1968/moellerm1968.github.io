@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>DP DHL Routing-API Vergleich</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <link rel="stylesheet" type="text/css" href="hereweb.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+  </head>
+  <body id="markers-on-the-map">
+  <div id="map"></div>   
+  <div id="Result">
+    <div class="table-wrapper">
+      <table class="tabelle">
+          <thead>
+          <tr>
+              <th id="Info"> </th>
+              <th onclick="SwitchView(0)">Here Routing<br>API V8(blau)</th>
+              <th onclick="SwitchView(2)">Here Fleet-Telem.<br>API Orig (rot)</th>
+              <th onclick="SwitchView(1)">Here Fleet-Telem.<br>API optimiert(grün)</th>
+              <th onclick="SwitchView(3)">PTV <br>routing/v1 (gelb)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td class="spalte1">Strecke [km]</td>
+              <td id="Str1">Content 1</td>
+              <td id="Str2">Content 1</td>
+              <td id="Str3">Content 1</td>
+              <td id="Str4">Content 1</td>
+          </tr>
+          <tr>
+              <td class="spalte1">Dauer</td>
+              <td id="Dauer1">Content 2</td>
+              <td id="Dauer2">Content 2</td>
+              <td id="Dauer3">Content 2</td>
+              <td id="Dauer4">Content 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button id="Erw. Paramter" onclick="einblenden()">Erw. Einstellungen</button>
+    <div id="ErweiterteEinstellungen">
+        <input type="text" id="addParams" size="170" />
+        <button id="Los" onclick="recalc()">Los</button>
+    </div>
+  </div>
+     
+      <script type="text/javascript">
+      document.write('<script type="text/javascript" src="hereweb.js?'+Math.random()+'"' + '></script');
+      </script>
+  </body>
+
+</html>
