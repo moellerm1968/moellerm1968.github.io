@@ -187,7 +187,7 @@ function addRoutingInfoToPage(){
   document.getElementById('Str2').textContent=routingdata.result[2].length.toFixed(2).replace('.', ',');
   document.getElementById('Str3').textContent=routingdata.result[1].length.toFixed(2).replace('.', ',');
   document.getElementById('Str4').textContent=routingdata.result[3].length.toFixed(2).replace('.', ',');
-  document.getElementById('DauerISBT').textContent=minutes2HHMMSS(routingdata.isbt_dauer.replace(',', '.');
+  document.getElementById('DauerISBT').textContent=minutes2HHMMSS(routingdata.isbt_dauer.replace(',', '.'));
   document.getElementById('Dauer1').textContent=minutes2HHMMSS(routingdata.result[0].duration);
   document.getElementById('Dauer2').textContent=minutes2HHMMSS(routingdata.result[2].duration);
   document.getElementById('Dauer3').textContent=minutes2HHMMSS(routingdata.result[1].duration);
