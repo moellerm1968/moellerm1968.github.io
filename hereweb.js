@@ -3,6 +3,8 @@ var routes = new H.map.Group();
 var urlParams = new URLSearchParams(window.location.search);
 
 var routingdata = {
+  isbt_laenge: urlParams.get('isbt_l'),
+  isbt_dauer: urlParams.get('isbt_d'),
   origin: {lat: urlParams.get('Origin').split(",")[0], lng: urlParams.get('Origin').split(",")[1]},
   destination: {lat: urlParams.get('Dest').split(",")[0], lng: urlParams.get('Dest').split(",")[1]},
   departureTime: urlParams.get('Departuretime'),
@@ -180,10 +182,12 @@ function saveRoutingInfo(sections){
 }
 
 function addRoutingInfoToPage(){
+  document.getElementById('StrISBT').textContent=routingdata.isbt_laenge;
   document.getElementById('Str1').textContent=routingdata.result[0].length.toFixed(2).replace('.', ',');
   document.getElementById('Str2').textContent=routingdata.result[2].length.toFixed(2).replace('.', ',');
   document.getElementById('Str3').textContent=routingdata.result[1].length.toFixed(2).replace('.', ',');
   document.getElementById('Str4').textContent=routingdata.result[3].length.toFixed(2).replace('.', ',');
+  document.getElementById('DauerISBT').textContent=minutes2HHMMSS(routingdata.isbt_dauer.replace(',', '.');
   document.getElementById('Dauer1').textContent=minutes2HHMMSS(routingdata.result[0].duration);
   document.getElementById('Dauer2').textContent=minutes2HHMMSS(routingdata.result[2].duration);
   document.getElementById('Dauer3').textContent=minutes2HHMMSS(routingdata.result[1].duration);
