@@ -8,9 +8,10 @@ var routingdata = {
   origin: {lat: urlParams.get('Origin').split(",")[0], lng: urlParams.get('Origin').split(",")[1]},
   destination: {lat: urlParams.get('Dest').split(",")[0], lng: urlParams.get('Dest').split(",")[1]},
   departureTime: urlParams.get('Departuretime'),
-  result:[{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0}],
+  result:[{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0}],
   polylines:[ null, null, null, null ],
-  addParam: '&algopts=truckIntersectionDelaySpeedCat5MSec:1000&speedFcCat=80,80,80,80,70,56,35,10;80,80,80,75,65,49,35,10;80,80,74,70,60,48,35,10;60,60,60,60,57,40,30,10;50,48,46,42,39,22,19,10;,,,,,,,'
+  addParam:  '&algopts=truckIntersectionDelaySpeedCat5MSec:1000&speedFcCat=80,80,80,80,70,56,35,10;80,80,80,75,65,49,35,10;80,80,74,70,60,48,35,10;60,60,60,60,57,40,30,10;50,48,46,42,39,22,19,10;,,,,,,,',
+  addParam2: '&algopts=truckIntersectionDelaySpeedCat5MSec:2000&speedFcCat=80,80,80,75,65,45,25,10;60,60,60,60,60,45,25,10;60,60,60,60,60,45,25,10;50,50,50,50,47,30,12,10;30,30,30,30,19,15,11,10;,,,,,,,'
 };
 
 var Duration = "0,0 h"
@@ -54,10 +55,10 @@ routes.addEventListener('tap', function (evt) {
   var ui = H.ui.UI.createDefault(map, defaultLayers);
   ui.addBubble(bubble);
 }, false);
-
+loadHereFleet(routingdata.origin, routingdata.destination, routingdata.departureTime, routingdata.addParam2).then((ergebnis) => show(ergebnis, 'black',3));
 loadHereFleet(routingdata.origin, routingdata.destination, routingdata.departureTime, routingdata.addParam).then((ergebnis) => show(ergebnis, 'green',1));
 loadHereFleet(routingdata.origin, routingdata.destination, routingdata.departureTime).then((ergebnis) => show(ergebnis, 'red',2));
-loadPTV(routingdata.origin, routingdata.destination, routingdata.departureTime).then((ergebnis) => showPTV(ergebnis, 'yellow',3));
+loadPTV(routingdata.origin, routingdata.destination, routingdata.departureTime).then((ergebnis) => showPTV(ergebnis, 'yellow',4));
 calculateRoutes (platform);
 
 function show(route, colour='blue', pos){
@@ -78,7 +79,7 @@ function show(route, colour='blue', pos){
       linestring.pushPoint({lat: link.shape[i], lng: link.shape[i+1]});
     }
   });
-  const polyline = new H.map.Polyline(linestring,{ style: { lineWidth: 6, strokeColor: colour, lineDash: [1, 3], lineDashOffset: pos*2, lineTailCap: 'arrow-tail', lineHeadCap: 'arrow-head' }});
+  const polyline = new H.map.Polyline(linestring,{ style: { lineWidth: 6, strokeColor: colour, lineDash: [1, 8], lineDashOffset: pos*2, lineTailCap: 'arrow-tail', lineHeadCap: 'arrow-head' }});
   // Add Line to Map
   routes.addObject(polyline);
   setZoom();
@@ -121,7 +122,7 @@ function showPTV(route, colour, pos){
   {
     linestring.pushPoint({lat: link[1], lng: link[0]});
   });
-  const polyline = new H.map.Polyline(linestring,{ style: { lineWidth: 6, strokeColor: colour, lineDash: [1, 3], lineDashOffset: pos*2, lineTailCap: 'arrow-tail', lineHeadCap: 'arrow-head' }});
+  const polyline = new H.map.Polyline(linestring,{ style: { lineWidth: 6, strokeColor: colour, lineDash: [1, 8], lineDashOffset: pos*2, lineTailCap: 'arrow-tail', lineHeadCap: 'arrow-head' }});
   // Add Line to Map
   routes.addObject(polyline);
  setZoom();
@@ -157,7 +158,7 @@ function calculateRoutes(platform) {
   
   calculateRoute(router, routeParam, {
     strokeColor: 'blue',
-    lineWidth: 5, lineDash: [1, 3], lineDashOffset: 0
+    lineWidth: 5, lineDash: [1, 8], lineDashOffset: 0
   });
 }
 
@@ -187,11 +188,13 @@ function addRoutingInfoToPage(){
   document.getElementById('Str2').textContent=routingdata.result[2].length.toFixed(2).replace('.', ',');
   document.getElementById('Str3').textContent=routingdata.result[1].length.toFixed(2).replace('.', ',');
   document.getElementById('Str4').textContent=routingdata.result[3].length.toFixed(2).replace('.', ',');
+  document.getElementById('Str5').textContent=routingdata.result[4].length.toFixed(2).replace('.', ',');
   document.getElementById('DauerISBT').textContent=minutes2HHMMSS(routingdata.isbt_dauer.replace(',', '.'));
   document.getElementById('Dauer1').textContent=minutes2HHMMSS(routingdata.result[0].duration);
   document.getElementById('Dauer2').textContent=minutes2HHMMSS(routingdata.result[2].duration);
   document.getElementById('Dauer3').textContent=minutes2HHMMSS(routingdata.result[1].duration);
   document.getElementById('Dauer4').textContent=minutes2HHMMSS(routingdata.result[3].duration);
+  document.getElementById('Dauer5').textContent=minutes2HHMMSS(routingdata.result[4].duration);
   document.getElementById('addParams').value=routingdata.addParam;
   }
 

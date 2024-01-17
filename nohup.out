@@ -1,0 +1,203 @@
+127.0.0.1 - - [17/Jan/2024 14:57:01] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 14:57:01] "GET /hereweb.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 14:57:01] "GET /hereweb.js?0.2846106334555033 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 14:57:02] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 14:57:02] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2024 14:57:17] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 14:57:18] "GET /hereweb.js?0.33675914590592226 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 14:59:04] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 14:59:04] "GET /hereweb.js?0.40470613690130086 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 14:59:04] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 14:59:04] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 44008)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/http/server.py", line 727, in send_head
+    f = open(path, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/moellerm/Schreibtisch/hereapp/moellerm1968.github.io/favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.10/http/server.py", line 1304, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.10/http/server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/lib/python3.10/http/server.py", line 433, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.10/http/server.py", line 421, in handle_one_request
+    method()
+  File "/usr/lib/python3.10/http/server.py", line 672, in do_GET
+    f = self.send_head()
+  File "/usr/lib/python3.10/http/server.py", line 729, in send_head
+    self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+  File "/usr/lib/python3.10/http/server.py", line 488, in send_error
+    self.wfile.write(body)
+  File "/usr/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [17/Jan/2024 15:00:55] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:00:56] "GET /hereweb.js?0.8997087261861317 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:06:59] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:06:59] "GET /hereweb.js?0.8762912135894813 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:07:05] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:07:05] "GET /hereweb.js?0.5693551557532258 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:08:21] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:08:21] "GET /hereweb.js?0.03872042772306039 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:08:21] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 15:08:21] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2024 15:10:07] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:10:07] "GET /hereweb.js?0.3637944085635959 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:11:35] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:11:35] "GET /hereweb.js?0.3221313855787483 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:11:35] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 15:11:35] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2024 15:21:08] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:21:08] "GET /hereweb.js?0.35778454839056084 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:22:07] "GET /hereweb.html?Origin=51.52625,12.103138&Dest=51.413805,12.292027&Departuretime=2021-04-06T08:25:00&isbt_l=40&isbt_d=40&isbt_id=427819 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:22:07] "GET /hereweb.css HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60162)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.10/http/server.py", line 1304, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.10/http/server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/lib/python3.10/http/server.py", line 433, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.10/http/server.py", line 421, in handle_one_request
+    method()
+  File "/usr/lib/python3.10/http/server.py", line 675, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.10/http/server.py", line 875, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.10/shutil.py", line 198, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [17/Jan/2024 15:22:07] "GET /hereweb.js?0.4471316272941631 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:24:01] "GET /hereweb.html?Origin=51.52625,12.103138&Dest=51.413805,12.292027&Departuretime=2021-04-06T08:25:00&isbt_l=40&isbt_d=40&isbt_id=427819 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:24:01] "GET /hereweb.js?0.5719555951338616 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:24:22] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:24:22] "GET /hereweb.js?0.44795801796276646 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:24:22] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 15:24:22] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 43044)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/http/server.py", line 727, in send_head
+    f = open(path, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/moellerm/Schreibtisch/hereapp/moellerm1968.github.io/favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.10/http/server.py", line 1304, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.10/http/server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/lib/python3.10/http/server.py", line 433, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.10/http/server.py", line 421, in handle_one_request
+    method()
+  File "/usr/lib/python3.10/http/server.py", line 672, in do_GET
+    f = self.send_head()
+  File "/usr/lib/python3.10/http/server.py", line 729, in send_head
+    self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+  File "/usr/lib/python3.10/http/server.py", line 488, in send_error
+    self.wfile.write(body)
+  File "/usr/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [17/Jan/2024 15:25:51] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:25:51] "GET /hereweb.js?0.30046035079856737 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:25:51] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 15:25:51] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46516)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/http/server.py", line 727, in send_head
+    f = open(path, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/moellerm/Schreibtisch/hereapp/moellerm1968.github.io/favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.10/http/server.py", line 1304, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.10/http/server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/lib/python3.10/http/server.py", line 433, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.10/http/server.py", line 421, in handle_one_request
+    method()
+  File "/usr/lib/python3.10/http/server.py", line 672, in do_GET
+    f = self.send_head()
+  File "/usr/lib/python3.10/http/server.py", line 729, in send_head
+    self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+  File "/usr/lib/python3.10/http/server.py", line 488, in send_error
+    self.wfile.write(body)
+  File "/usr/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [17/Jan/2024 15:27:05] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:27:05] "GET /hereweb.js?0.25180722363442465 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:27:06] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 15:27:06] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55970)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/http/server.py", line 727, in send_head
+    f = open(path, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/moellerm/Schreibtisch/hereapp/moellerm1968.github.io/favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.10/http/server.py", line 1304, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.10/http/server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/lib/python3.10/http/server.py", line 433, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.10/http/server.py", line 421, in handle_one_request
+    method()
+  File "/usr/lib/python3.10/http/server.py", line 672, in do_GET
+    f = self.send_head()
+  File "/usr/lib/python3.10/http/server.py", line 729, in send_head
+    self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+  File "/usr/lib/python3.10/http/server.py", line 488, in send_error
+    self.wfile.write(body)
+  File "/usr/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [17/Jan/2024 15:27:38] "GET /hereweb.html?Origin=51.413805,12.292027&Dest=51.190666,14.458555&Departuretime=2021-04-08T03:30:00&isbt_l=185&isbt_d=175&isbt_id=428256 HTTP/1.1" 304 -
+127.0.0.1 - - [17/Jan/2024 15:27:38] "GET /hereweb.js?0.4851561953172523 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:27:38] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 15:27:38] "GET /favicon.ico HTTP/1.1" 404 -
