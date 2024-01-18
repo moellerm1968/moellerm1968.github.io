@@ -201,3 +201,7 @@ BrokenPipeError: [Errno 32] Broken pipe
 127.0.0.1 - - [17/Jan/2024 15:27:38] "GET /hereweb.js?0.4851561953172523 HTTP/1.1" 200 -
 127.0.0.1 - - [17/Jan/2024 15:27:38] code 404, message File not found
 127.0.0.1 - - [17/Jan/2024 15:27:38] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Jan/2024 15:34:39] "GET /hereweb.html?Origin=51.52625,12.103138&Dest=51.413805,12.292027&Departuretime=2021-04-06T08:25:00&isbt_l=40&isbt_d=40&isbt_id=427819 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:34:39] "GET /hereweb.js?0.7465855487775548 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2024 15:34:40] code 404, message File not found
+127.0.0.1 - - [17/Jan/2024 15:34:40] "GET /favicon.ico HTTP/1.1" 404 -

@@ -127,6 +127,7 @@ function showPTV(route, colour, pos){
   routes.addObject(polyline);
  setZoom();
   routingdata.polylines[pos]=polyline;
+  addRoutingInfoToPage();
 }
 
 
