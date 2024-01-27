@@ -205,3 +205,316 @@ BrokenPipeError: [Errno 32] Broken pipe
 127.0.0.1 - - [17/Jan/2024 15:34:39] "GET /hereweb.js?0.7465855487775548 HTTP/1.1" 200 -
 127.0.0.1 - - [17/Jan/2024 15:34:40] code 404, message File not found
 127.0.0.1 - - [17/Jan/2024 15:34:40] "GET /favicon.ico HTTP/1.1" 404 -
+[Sat Jan 27 19:31:26 2024] PHP 8.1.2-1ubuntu2.14 Development Server (http://localhost:8000) started
+[Sat Jan 27 19:32:06 2024] 127.0.0.1:43666 Accepted
+[Sat Jan 27 19:32:06 2024] 127.0.0.1:43666 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9
+[Sat Jan 27 19:32:06 2024] 127.0.0.1:43666 Closing
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43680 Accepted
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43680 [200]: GET /hereweb.css
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43680 Closing
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43694 Accepted
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43694 [200]: GET /hereweb.js?0.38173736435765915
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43694 Closing
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43704 Accepted
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43704 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 19:32:07 2024] 127.0.0.1:43704 Closing
+[Sat Jan 27 19:35:57 2024] 127.0.0.1:46712 Accepted
+[Sat Jan 27 19:35:57 2024] 127.0.0.1:46712 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 19:35:57 2024] 127.0.0.1:46712 Closing
+[Sat Jan 27 19:35:57 2024] 127.0.0.1:46726 Accepted
+[Sat Jan 27 19:35:57 2024] 127.0.0.1:46726 [200]: GET /hereweb.css
+[Sat Jan 27 19:35:57 2024] 127.0.0.1:46726 Closing
+[Sat Jan 27 19:35:58 2024] 127.0.0.1:46734 Accepted
+[Sat Jan 27 19:35:58 2024] 127.0.0.1:46734 [200]: GET /hereweb.js?0.422903730946955
+[Sat Jan 27 19:35:58 2024] 127.0.0.1:46734 Closing
+[Sat Jan 27 19:35:58 2024] 127.0.0.1:46746 Accepted
+[Sat Jan 27 19:35:58 2024] 127.0.0.1:46746 Closed without sending a request; it was probably just an unused speculative preconnection
+[Sat Jan 27 19:35:58 2024] 127.0.0.1:46746 Closing
+[Sat Jan 27 19:36:06 2024] 127.0.0.1:48550 Accepted
+[Sat Jan 27 19:36:06 2024] 127.0.0.1:48550 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 19:36:06 2024] 127.0.0.1:48550 Closing
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51268 Accepted
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51268 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51268 Closing
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51276 Accepted
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51276 [200]: GET /hereweb.css
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51276 Closing
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51280 Accepted
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51280 [200]: GET /hereweb.js?0.33143795699910616
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51280 Closing
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51290 Accepted
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51290 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 19:36:34 2024] 127.0.0.1:51290 Closing
+[Sat Jan 27 19:36:43 2024] 127.0.0.1:50876 Accepted
+[Sat Jan 27 19:36:43 2024] 127.0.0.1:50876 Invalid request (Unsupported SSL request)
+[Sat Jan 27 19:36:43 2024] 127.0.0.1:50876 Closing
+[Sat Jan 27 19:37:32 2024] 127.0.0.1:57900 Accepted
+[Sat Jan 27 19:37:32 2024] 127.0.0.1:57900 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 19:37:32 2024] 127.0.0.1:57900 Closing
+[Sat Jan 27 19:37:32 2024] 127.0.0.1:57912 Accepted
+[Sat Jan 27 19:37:32 2024] 127.0.0.1:57912 [200]: GET /hereweb.css
+[Sat Jan 27 19:37:32 2024] 127.0.0.1:57912 Closing
+[Sat Jan 27 19:37:33 2024] 127.0.0.1:57926 Accepted
+[Sat Jan 27 19:37:33 2024] 127.0.0.1:57926 [200]: GET /hereweb.js?0.36539702065225643
+[Sat Jan 27 19:37:33 2024] 127.0.0.1:57926 Closing
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41232 Accepted
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41238 Accepted
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41240 Accepted
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41232 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41232 Closing
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41240 [200]: GET /hereweb.css
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41240 Closing
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41238 [200]: GET /hereweb.js?0.7538160613042959
+[Sat Jan 27 20:01:15 2024] 127.0.0.1:41238 Closing
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33558 Accepted
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33570 Accepted
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33578 Accepted
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33584 Accepted
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33558 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33558 Closing
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33570 [200]: GET /hereweb.css
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33570 Closing
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33584 [200]: GET /hereweb.js?0.8524222619463877
+[Sat Jan 27 20:14:01 2024] 127.0.0.1:33584 Closing
+[Sat Jan 27 20:14:02 2024] 127.0.0.1:33578 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:14:02 2024] 127.0.0.1:33578 Closing
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44966 Accepted
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44966 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44966 Closing
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44972 Accepted
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44972 [200]: GET /hereweb.css
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44972 Closing
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44978 Accepted
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44978 [200]: GET /hereweb.js?0.32058024433268084
+[Sat Jan 27 20:15:22 2024] 127.0.0.1:44978 Closing
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35188 Accepted
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35204 Accepted
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35188 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35188 Closing
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35204 [200]: GET /hereweb.css
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35204 Closing
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35210 Accepted
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35210 [200]: GET /hereweb.js?0.04110016638572689
+[Sat Jan 27 20:18:10 2024] 127.0.0.1:35210 Closing
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34220 Accepted
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34232 Accepted
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34240 Accepted
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34242 Accepted
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34220 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34220 Closing
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34232 [200]: GET /hereweb.css
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34232 Closing
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34242 [200]: GET /hereweb.js?0.6093527993192193
+[Sat Jan 27 20:19:44 2024] 127.0.0.1:34242 Closing
+[Sat Jan 27 20:19:49 2024] 127.0.0.1:34240 Closed without sending a request; it was probably just an unused speculative preconnection
+[Sat Jan 27 20:19:49 2024] 127.0.0.1:34240 Closing
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37470 Accepted
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37470 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37470 Closing
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37482 Accepted
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37482 [200]: GET /hereweb.css
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37482 Closing
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37494 Accepted
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37494 [200]: GET /hereweb.js?0.12447410196207165
+[Sat Jan 27 20:23:21 2024] 127.0.0.1:37494 Closing
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39926 Accepted
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39926 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39926 Closing
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39932 Accepted
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39932 [200]: GET /hereweb.css
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39932 Closing
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39934 Accepted
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39934 [200]: GET /hereweb.js?0.9407501841618353
+[Sat Jan 27 20:26:02 2024] 127.0.0.1:39934 Closing
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33248 Accepted
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33248 [200]: GET /hereweb.html?Origin=48.605194,10.721583&Dest=48.599166,10.7195&Departuretime=2021-09-30T12:25:00&isbt_l=0,8&isbt_d=1,7&isbt_id=9&Vehicletype=4
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33248 Closing
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33250 Accepted
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33250 [200]: GET /hereweb.css
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33250 Closing
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33254 Accepted
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33254 [200]: GET /hereweb.js?0.17101472642852977
+[Sat Jan 27 20:28:02 2024] 127.0.0.1:33254 Closing
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:58866 Accepted
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:58866 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=4
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:58866 Closing
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:33040 Accepted
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:33040 [200]: GET /hereweb.css
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:33040 Closing
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:33046 Accepted
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:33046 [200]: GET /hereweb.js?0.23940476088345364
+[Sat Jan 27 20:28:48 2024] 127.0.0.1:33046 Closing
+[Sat Jan 27 20:29:17 2024] 127.0.0.1:42382 Accepted
+[Sat Jan 27 20:29:17 2024] 127.0.0.1:42382 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=1
+[Sat Jan 27 20:29:17 2024] 127.0.0.1:42382 Closing
+[Sat Jan 27 20:29:17 2024] 127.0.0.1:42392 Accepted
+[Sat Jan 27 20:29:17 2024] 127.0.0.1:42392 [200]: GET /hereweb.css
+[Sat Jan 27 20:29:17 2024] 127.0.0.1:42392 Closing
+[Sat Jan 27 20:29:18 2024] 127.0.0.1:42400 Accepted
+[Sat Jan 27 20:29:18 2024] 127.0.0.1:42400 [200]: GET /hereweb.js?0.842963468260505
+[Sat Jan 27 20:29:18 2024] 127.0.0.1:42400 Closing
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38284 Accepted
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38284 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38284 Closing
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38300 Accepted
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38300 [200]: GET /hereweb.css
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38300 Closing
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38308 Accepted
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38308 [200]: GET /hereweb.js?0.22144587606349908
+[Sat Jan 27 20:29:27 2024] 127.0.0.1:38308 Closing
+[Sat Jan 27 20:29:41 2024] 127.0.0.1:53082 Accepted
+[Sat Jan 27 20:29:41 2024] 127.0.0.1:53082 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=3
+[Sat Jan 27 20:29:41 2024] 127.0.0.1:53082 Closing
+[Sat Jan 27 20:29:41 2024] 127.0.0.1:53084 Accepted
+[Sat Jan 27 20:29:41 2024] 127.0.0.1:53084 [200]: GET /hereweb.css
+[Sat Jan 27 20:29:41 2024] 127.0.0.1:53084 Closing
+[Sat Jan 27 20:29:42 2024] 127.0.0.1:53094 Accepted
+[Sat Jan 27 20:29:42 2024] 127.0.0.1:53094 [200]: GET /hereweb.js?0.6205520687250904
+[Sat Jan 27 20:29:42 2024] 127.0.0.1:53094 Closing
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34472 Accepted
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34472 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=6
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34472 Closing
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34478 Accepted
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34478 [200]: GET /hereweb.css
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34478 Closing
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34486 Accepted
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34486 [200]: GET /hereweb.js?0.9043655995457789
+[Sat Jan 27 20:30:04 2024] 127.0.0.1:34486 Closing
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40876 Accepted
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40876 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=4
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40876 Closing
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40890 Accepted
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40890 [200]: GET /hereweb.css
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40890 Closing
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40892 Accepted
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40892 [200]: GET /hereweb.js?0.33798095687950613
+[Sat Jan 27 20:30:42 2024] 127.0.0.1:40892 Closing
+[Sat Jan 27 20:30:43 2024] 127.0.0.1:40898 Accepted
+[Sat Jan 27 20:30:43 2024] 127.0.0.1:40898 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:30:43 2024] 127.0.0.1:40898 Closing
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:40908 Accepted
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:40908 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=3
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:40908 Closing
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:42360 Accepted
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:42360 [200]: GET /hereweb.css
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:42360 Closing
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:42372 Accepted
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:42372 [200]: GET /hereweb.js?0.9349860792759478
+[Sat Jan 27 20:30:48 2024] 127.0.0.1:42372 Closing
+[Sat Jan 27 20:30:49 2024] 127.0.0.1:42384 Accepted
+[Sat Jan 27 20:30:49 2024] 127.0.0.1:42384 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:30:49 2024] 127.0.0.1:42384 Closing
+[Sat Jan 27 20:30:55 2024] 127.0.0.1:42392 Accepted
+[Sat Jan 27 20:30:56 2024] 127.0.0.1:42392 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:30:56 2024] 127.0.0.1:42392 Closing
+[Sat Jan 27 20:30:56 2024] 127.0.0.1:42408 Accepted
+[Sat Jan 27 20:30:56 2024] 127.0.0.1:42408 [200]: GET /hereweb.css
+[Sat Jan 27 20:30:56 2024] 127.0.0.1:42408 Closing
+[Sat Jan 27 20:30:56 2024] 127.0.0.1:42424 Accepted
+[Sat Jan 27 20:30:56 2024] 127.0.0.1:42424 [200]: GET /hereweb.js?0.9063668792228928
+[Sat Jan 27 20:30:56 2024] 127.0.0.1:42424 Closing
+[Sat Jan 27 20:30:57 2024] 127.0.0.1:42428 Accepted
+[Sat Jan 27 20:30:57 2024] 127.0.0.1:42428 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:30:57 2024] 127.0.0.1:42428 Closing
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54426 Accepted
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54426 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54426 Closing
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54432 Accepted
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54432 [200]: GET /hereweb.css
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54432 Closing
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54438 Accepted
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54438 [200]: GET /hereweb.js?0.6981440817678028
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54438 Closing
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54442 Accepted
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54442 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:31:34 2024] 127.0.0.1:54442 Closing
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53158 Accepted
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53158 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53158 Closing
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53160 Accepted
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53160 [200]: GET /hereweb.css
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53160 Closing
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53162 Accepted
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53162 [200]: GET /hereweb.js?0.4740875602703465
+[Sat Jan 27 20:35:58 2024] 127.0.0.1:53162 Closing
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53172 Accepted
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53172 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53172 Closing
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53182 Accepted
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53182 [200]: GET /hereweb.css
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53182 Closing
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53192 Accepted
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53192 [200]: GET /hereweb.js?0.19733136610240087
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53192 Closing
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53200 Accepted
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53200 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:36:01 2024] 127.0.0.1:53200 Closing
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38744 Accepted
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38744 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38744 Closing
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38758 Accepted
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38758 [200]: GET /hereweb.css
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38758 Closing
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38766 Accepted
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38766 [200]: GET /hereweb.js?0.40398208826884485
+[Sat Jan 27 20:37:59 2024] 127.0.0.1:38766 Closing
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50742 Accepted
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50742 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50742 Closing
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50758 Accepted
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50758 [200]: GET /hereweb.css
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50758 Closing
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50766 Accepted
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50766 [200]: GET /hereweb.js?0.8287924069045555
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50766 Closing
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50772 Accepted
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50772 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:39:56 2024] 127.0.0.1:50772 Closing
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36200 Accepted
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36200 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36200 Closing
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36214 Accepted
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36214 [200]: GET /hereweb.css
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36214 Closing
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36216 Accepted
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36216 [200]: GET /hereweb.js?0.5477763669728144
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36216 Closing
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36218 Accepted
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36218 Closed without sending a request; it was probably just an unused speculative preconnection
+[Sat Jan 27 20:40:02 2024] 127.0.0.1:36218 Closing
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58946 Accepted
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58946 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=2
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58946 Closing
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58960 Accepted
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58960 [200]: GET /hereweb.css
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58960 Closing
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58962 Accepted
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58962 [200]: GET /hereweb.js?0.2795925623198884
+[Sat Jan 27 20:40:17 2024] 127.0.0.1:58962 Closing
+[Sat Jan 27 20:40:18 2024] 127.0.0.1:58970 Accepted
+[Sat Jan 27 20:40:18 2024] 127.0.0.1:58970 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:40:18 2024] 127.0.0.1:58970 Closing
+[Sat Jan 27 20:41:18 2024] 127.0.0.1:47654 Accepted
+[Sat Jan 27 20:41:20 2024] 127.0.0.1:47654 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=4
+[Sat Jan 27 20:41:20 2024] 127.0.0.1:47654 Closing
+[Sat Jan 27 20:41:20 2024] 127.0.0.1:56030 Accepted
+[Sat Jan 27 20:41:20 2024] 127.0.0.1:56030 [200]: GET /hereweb.css
+[Sat Jan 27 20:41:20 2024] 127.0.0.1:56030 Closing
+[Sat Jan 27 20:41:20 2024] 127.0.0.1:56032 Accepted
+[Sat Jan 27 20:41:20 2024] 127.0.0.1:56032 [200]: GET /hereweb.js?0.2791266776770299
+[Sat Jan 27 20:41:20 2024] 127.0.0.1:56032 Closing
+[Sat Jan 27 20:41:21 2024] 127.0.0.1:56034 Accepted
+[Sat Jan 27 20:41:21 2024] 127.0.0.1:56034 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 20:41:21 2024] 127.0.0.1:56034 Closing
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42712 Accepted
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42712 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=4
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42712 Closing
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42718 Accepted
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42718 [200]: GET /hereweb.css
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42718 Closing
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42724 Accepted
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42724 [200]: GET /hereweb.js?0.2739795172943137
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:42724 Closing
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:52670 Accepted
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:52670 Closed without sending a request; it was probably just an unused speculative preconnection
+[Sat Jan 27 20:44:58 2024] 127.0.0.1:52670 Closing

@@ -8,11 +8,105 @@ var routingdata = {
   origin: {lat: urlParams.get('Origin').split(",")[0], lng: urlParams.get('Origin').split(",")[1]},
   destination: {lat: urlParams.get('Dest').split(",")[0], lng: urlParams.get('Dest').split(",")[1]},
   departureTime: urlParams.get('Departuretime'),
+  vehicleType: urlParams.get('Vehicletype'),
   result:[{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0},{ duration: 0.0, length: 0.0}],
   polylines:[ null, null, null, null ],
   addParam:  '&algopts=truckIntersectionDelaySpeedCat5MSec:1000&speedFcCat=80,80,80,80,70,56,35,10;80,80,80,75,65,49,35,10;80,80,74,70,60,48,35,10;60,60,60,60,57,40,30,10;50,48,46,42,39,22,19,10;,,,,,,,',
   addParam2: '&algopts=truckIntersectionDelaySpeedCat5MSec:2000&speedFcCat=80,80,80,75,65,45,25,10;60,60,60,60,60,45,25,10;60,60,60,60,60,45,25,10;50,50,50,50,47,30,12,10;30,30,30,30,19,15,11,10;,,,,,,,'
 };
+
+var vehicleTypes =[ 
+  { 
+      "VehicleType": 1,
+      "Description": "Transporter <= 2,8 t",
+      "Height": 3.35,
+      "Width": 2.28,
+      "Length": 5.78,
+      "AxlesCount": 2,
+      "MaxAllWeigth": 2.8,
+      "EmissionType": 6,
+      "MaxAllSpeed": 130,
+      "TollVehicleType": 2,
+      "Mode": "car",
+      "speedFcCat": "113,112,104,84,60,37,17,10;112,107,90,84,60,37,16,10;107,104,83,81,59,36,15,10;58,58,58,58,54,35,14,10;35,35,35,35,22,17,13,10;,,,,,,,", // Nur Fleet Telematics
+      "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
+    },
+    { 
+      "VehicleType": 2,
+      "Description": "Transp>2,8 t<=3,5 t",
+      "Height": 2.57,
+      "Width": 2.55,
+      "Length": 7.12,
+      "AxlesCount": 2,
+      "MaxAllWeigth": 3.5,
+      "EmissionType": 6,
+      "MaxAllSpeed": 130,
+      "TollVehicleType": 2,
+      "Mode": "car",
+      "speedFcCat": "113,112,104,84,60,37,17,10;112,107,90,84,60,37,16,10;107,104,83,81,59,36,15,10;58,58,58,58,54,35,14,10;35,35,35,35,22,17,13,10;,,,,,,,", // Nur Fleet Telematics
+      "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
+    },
+    {
+      "VehicleType": 3,
+      "Description": "Lkw <= 7,5t",
+      "Height": 3.35,
+      "Width": 2.55,
+      "Length": 7.9,
+      "AxlesCount": 2,
+      "MaxAllWeigth": 7.49,
+      "EmissionType": 6,
+      "MaxAllSpeed": 80,
+      "TollVehicleType": 9,
+      "Mode": "truck",
+      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+    },
+    {
+      "VehicleType": 4,
+      "Description": "Lkw >7,5 t <=11,99 t",
+      "Height": 3.4,
+      "Width": 2.55,
+      "Length": 9.18,
+      "AxlesCount": 2,
+      "MaxAllWeigth": 11.99,
+      "EmissionType": 6,
+      "MaxAllSpeed": 80,
+      "TollVehicleType": 3,
+      "Mode": "truck",
+      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+    },
+    {
+      "VehicleType": 5,
+      "Description": "Lkw >=12 t <=23 t",
+      "Height": 4.0,
+      "Width": 2.55,
+      "Length": 9.95,
+      "AxlesCount": 2,
+      "MaxAllWeigth": 23,
+      "EmissionType": 6,
+      "MaxAllSpeed": 80,
+      "TollVehicleType": 3,
+      "Mode": "truck",
+      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+    },
+    { 
+      "VehicleType": 6,
+      "Description": "Lkw > 23 t",
+      "Height": 4.0,
+      "Width": 2.5,
+      "Length": 9.6,
+      "AxlesCount": 3, //29% have 5 axles, rest 3axles
+      "MaxAllWeigth": 26, //29% (type 71) have 40tons, rest mainly 26tons
+      "EmissionType": 6,
+      "MaxAllSpeed": 80,
+      "TollVehicleType": 3,
+      "Mode": "truck",
+      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+    },];
+  
 
 var Duration = "0,0 h"
 var Laenge = "0,0 km"
@@ -55,9 +149,13 @@ routes.addEventListener('tap', function (evt) {
   var ui = H.ui.UI.createDefault(map, defaultLayers);
   ui.addBubble(bubble);
 }, false);
-loadHereFleet(routingdata.origin, routingdata.destination, routingdata.departureTime, routingdata.addParam2).then((ergebnis) => show(ergebnis, 'black',3));
-loadHereFleet(routingdata.origin, routingdata.destination, routingdata.departureTime, routingdata.addParam).then((ergebnis) => show(ergebnis, 'green',1));
-loadHereFleet(routingdata.origin, routingdata.destination, routingdata.departureTime).then((ergebnis) => show(ergebnis, 'red',2));
+
+// mit Fahrzeugspezifischen Parametern 
+loadHereFleetNew("yes").then((ergebnis) => show(ergebnis, 'black',3));
+// mit Globalen Parametern 
+loadHereFleetNew(routingdata.addParam).then((ergebnis) => show(ergebnis, 'green',1));
+// ohne Parameter
+loadHereFleetNew().then((ergebnis) => show(ergebnis, 'red',2));
 loadPTV(routingdata.origin, routingdata.destination, routingdata.departureTime).then((ergebnis) => showPTV(ergebnis, 'yellow',4));
 calculateRoutes (platform);
 
@@ -224,24 +322,47 @@ function addRouteShapeToMap(style, route){
   });
 }
 
-async function loadHereFleet(origin, destination, reftime, addparam=""){
+async function loadHereFleetNew(addParameter=""){
 
-  const truckparam="&height=3.8&limitedWeight=11t";
   const url = "https://fleet.ls.hereapi.com/2/calculateroute.json";
-  const origin_str = origin.lat + "," + origin.lng;
-  const dest_str = destination.lat + "," + destination.lng;
-  //const apiKey="gET017F3PS1alYkXek5T9nAaTOXycH6bKRzcrOG_6eE";
-  const apiKey="Is-9tu_HmtJnc-hoBx5MAPXTE7vjRKZGbtKMjO56Kwk";
-  var apicall = url+"?apiKey="+apiKey+"&mode=fastest;truck;traffic:enabled&waypoint0=" + origin_str +"&waypoint1=" + dest_str + "&departureTime="+reftime;
-  apicall+=truckparam;
-  if (addparam!=""){
-    apicall+=addparam;
-  }
+       
+  let fahrzeug = vehicleTypes.find (fahrzeug => fahrzeug.VehicleType == routingdata.vehicleType);
+    
+  var HereTelematicsParameter = {
+        "mode": "fastest;"+fahrzeug.Mode+";traffic:enabled",
+        "height": fahrzeug.Height + "m",
+        "width": fahrzeug.Width + "m",
+        "length": fahrzeug.Length + "m",
+        "limitedWeight": fahrzeug.MaxAllWeigth+"t",
+        "axleCount": fahrzeug.AxlesCount,
+        "maxSpeed": fahrzeug.MaxAllSpeed,
+        "waypoint0": routingdata.origin.lat+","+routingdata.origin.lng,
+        "waypoint1": routingdata.destination.lat+","+routingdata.destination.lng,
+        "departureTime": routingdata.departureTime,
+        
+        "apiKey": "Is-9tu_HmtJnc-hoBx5MAPXTE7vjRKZGbtKMjO56Kwk"
+  }; 
+
+  if (addParameter == "yes"){
+        HereTelematicsParameter = { ...HereTelematicsParameter, ...
+            { 
+                "speedFcCat" : fahrzeug.speedFcCat,
+                "algopts": fahrzeug.algopts
+            } 
+        }
+  } 
+
+  var queryString = new URLSearchParams(HereTelematicsParameter).toString();
+  if (addParameter != "" && addParameter != "yes")
+        queryString+=addParameter;
+  
+  var apicall = url+"?"+queryString;
   const response = await fetch(apicall, {method: 'GET',redirect: 'follow'});
   const obj = await response.json();
-  if(!response.ok) return (null);
+    if(!response.ok) return (null);
   return(obj.response.route[0]) ;
 }; 
+
 
 async function loadPTV(origin, destination, reftime, addparam=""){
 
