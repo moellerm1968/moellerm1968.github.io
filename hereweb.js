@@ -157,7 +157,7 @@ loadHereFleetNew(routingdata.addParam).then((ergebnis) => show(ergebnis, 'green'
 // ohne Parameter
 loadHereFleetNew().then((ergebnis) => show(ergebnis, 'red',2));
 loadPTV(routingdata.origin, routingdata.destination, routingdata.departureTime).then((ergebnis) => showPTV(ergebnis, 'yellow',4));
-calculateRoutes (platform);
+calculateRoutesNew (platform);
 
 function show(route, colour='blue', pos){
   if (route==null)
@@ -238,28 +238,39 @@ function drawMarker(coord, text)
 }
 
 
-function calculateRoutes(platform) {
+function calculateRoutesNew(platform) {
 
   var router = platform.getRoutingService(null, 8);
-  
+  let fahrzeug = vehicleTypes.find(fahrzeug => fahrzeug.VehicleType == routingdata.vehicleType);
+
   var routeParam = {
     routingMode: 'fast',
-    transportMode: 'truck',
+    transportMode: fahrzeug.Mode,
     return: 'polyline,travelSummary',
     units: 'metric',
     spans: 'truckAttributes',
     origin: routingdata.origin.lat + "," + routingdata.origin.lng, 
     destination: routingdata.destination.lat + "," + routingdata.destination.lng,
-    departureTime: routingdata.departureTime,
-    'vehicle[height]': 380,
-    'vehicle[grossWeight]': 11000
+    departureTime: routingdata.departureTime
   }
   
-  calculateRoute(router, routeParam, {
+  if (fahrzeug.Mode==="truck"){ 
+    
+      routeParam = { ...routeParam, ...{
+        "vehicle[height]": Math.round(fahrzeug.Height*100),
+        "vehicle[width]": Math.round(fahrzeug.Width*100),
+        "vehicle[length]": Math.round(fahrzeug.Length*100),
+        "vehicle[grossWeight]": Math.round(fahrzeug.MaxAllWeigth*1000)
+       }};  
+    } 
+   
+    calculateRoute(router, routeParam, {
     strokeColor: 'blue',
     lineWidth: 5, lineDash: [1, 8], lineDashOffset: 0
   });
 }
+
+
 
 function calculateRoute (router, params, style) {
    router.calculateRoute(params, function(result) {
