@@ -43,7 +43,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 130,
       "TollVehicleType": 2,
       "Mode": "car",
-      "speedFcCat": "110,109,101,82,58,36,17,10;109,104,87,82,58,36,16,10;104,101,81,78,57,35,15,0;56,56,56,56,53,34,13,0;34,34,34,34,21,17,12,0;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "107,106,98,80,57,35,16,10;106,101,85,80,57,35,15,0;101,98,78,76,56,34,14,0;55,55,55,55,51,33,13,0;33,33,33,33,21,16,12,8;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
     },
     {
@@ -104,10 +104,9 @@ var vehicleTypes =[
       "TollVehicleType": 3,
       "Mode": "truck",
       "speedFcCat": "74,74,74,69,60,41,23,10;55,55,55,55,55,41,23,10;55,55,55,55,55,41,23,10;46,46,46,46,43,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
-      "": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+      "algopts": undefined // Nur Fleet Telematics
     },];
-  
-
+    
 var Duration = "0,0 h"
 var Laenge = "0,0 km"
 
