@@ -28,7 +28,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 130,
       "TollVehicleType": 2,
       "Mode": "car",
-      "speedFcCat": "113,112,104,84,60,37,17,10;112,107,90,84,60,37,16,10;107,104,83,81,59,36,15,10;58,58,58,58,54,35,14,10;35,35,35,35,22,17,13,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "110,109,101,82,58,36,17,10;109,104,87,82,58,36,16,10;104,101,81,78,57,35,15,0;56,56,56,56,53,34,13,0;34,34,34,34,21,17,12,0;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
     },
     { 
@@ -43,7 +43,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 130,
       "TollVehicleType": 2,
       "Mode": "car",
-      "speedFcCat": "113,112,104,84,60,37,17,10;112,107,90,84,60,37,16,10;107,104,83,81,59,36,15,10;58,58,58,58,54,35,14,10;35,35,35,35,22,17,13,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "110,109,101,82,58,36,17,10;109,104,87,82,58,36,16,10;104,101,81,78,57,35,15,0;56,56,56,56,53,34,13,0;34,34,34,34,21,17,12,0;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
     },
     {
@@ -58,7 +58,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 80,
       "TollVehicleType": 9,
       "Mode": "truck",
-      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "74,74,74,69,60,41,23,10;55,55,55,55,55,41,23,10;55,55,55,55,55,41,23,10;46,46,46,46,43,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
     {
@@ -73,7 +73,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 80,
       "TollVehicleType": 3,
       "Mode": "truck",
-      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "74,74,74,69,60,41,23,10;55,55,55,55,55,41,23,10;55,55,55,55,55,41,23,10;46,46,46,46,43,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
     {
@@ -88,7 +88,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 80,
       "TollVehicleType": 3,
       "Mode": "truck",
-      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "74,74,74,69,60,41,23,10;55,55,55,55,55,41,23,10;55,55,55,55,55,41,23,10;46,46,46,46,43,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
     { 
@@ -103,7 +103,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 80,
       "TollVehicleType": 3,
       "Mode": "truck",
-      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "74,74,74,69,60,41,23,10;55,55,55,55,55,41,23,10;55,55,55,55,55,41,23,10;46,46,46,46,43,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
       "": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },];
   
