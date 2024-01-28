@@ -407,7 +407,7 @@ function SwitchView(id){
 function recalc(){
   routes.removeObject(routingdata.polylines[1]);
   routingdata.addParam=document.getElementById('addParams').value;
-  loadHereFleet(routingdata.origin, routingdata.destination, routingdata.departureTime, routingdata.addParam).then((ergebnis) => show(ergebnis, 'green',1));
+  loadHereFleetNew(routingdata.addParam).then((ergebnis) => show(ergebnis, 'green',1));
 } 
 
 function einblenden(){

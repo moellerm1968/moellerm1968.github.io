@@ -578,3 +578,25 @@ BrokenPipeError: [Errno 32] Broken pipe
 [Sat Jan 27 21:30:53 2024] 127.0.0.1:39856 Accepted
 [Sat Jan 27 21:30:53 2024] 127.0.0.1:39856 [200]: GET /hereweb.js?0.6163044177612126
 [Sat Jan 27 21:30:53 2024] 127.0.0.1:39856 Closing
+[Sat Jan 27 21:36:27 2024] 127.0.0.1:51428 Accepted
+[Sat Jan 27 21:36:27 2024] 127.0.0.1:51428 [200]: GET /hereweb.html?Origin=48.656027,10.816999&Dest=48.650472,10.805472&Departuretime=2021-10-30T12:02:00&isbt_l=1,6&isbt_d=2,3&isbt_id=21&Vehicletype=5
+[Sat Jan 27 21:36:27 2024] 127.0.0.1:51428 Closing
+[Sat Jan 27 21:36:27 2024] 127.0.0.1:51434 Accepted
+[Sat Jan 27 21:36:27 2024] 127.0.0.1:51434 [200]: GET /hereweb.css
+[Sat Jan 27 21:36:27 2024] 127.0.0.1:51434 Closing
+[Sat Jan 27 21:36:28 2024] 127.0.0.1:51440 Accepted
+[Sat Jan 27 21:36:28 2024] 127.0.0.1:51440 [200]: GET /hereweb.js?0.2203763281848664
+[Sat Jan 27 21:36:28 2024] 127.0.0.1:51440 Closing
+[Sat Jan 27 21:36:28 2024] 127.0.0.1:51446 Accepted
+[Sat Jan 27 21:36:28 2024] 127.0.0.1:51446 [404]: GET /favicon.ico - No such file or directory
+[Sat Jan 27 21:36:28 2024] 127.0.0.1:51446 Closing
+[Sun Jan 28 11:39:58 2024] PHP 8.1.2-1ubuntu2.14 Development Server (http://localhost:8000) started
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48838 Accepted
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48838 [200]: GET /hereweb.html?Origin=49.120638,8.560194&Dest=48.888583,8.312027&Departuretime=2020-10-26T09:57:00&isbt_l=44,3&isbt_d=50&isbt_id=435329&Vehicletype=4
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48838 Closing
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48842 Accepted
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48842 [200]: GET /hereweb.css
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48842 Closing
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48844 Accepted
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48844 [200]: GET /hereweb.js?0.5146985334980216
+[Sun Jan 28 11:41:08 2024] 127.0.0.1:48844 Closing
