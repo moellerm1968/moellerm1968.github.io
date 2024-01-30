@@ -348,7 +348,7 @@ async function loadHereFleetNew(addParameter=""){
         "maxSpeed": fahrzeug.MaxAllSpeed,
         "waypoint0": routingdata.origin.lat+","+routingdata.origin.lng,
         "waypoint1": routingdata.destination.lat+","+routingdata.destination.lng,
-        "departureTime": routingdata.departureTime,
+        "departure": routingdata.departureTime,
         
         "apiKey": "Is-9tu_HmtJnc-hoBx5MAPXTE7vjRKZGbtKMjO56Kwk"
   }; 
