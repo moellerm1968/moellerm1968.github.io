@@ -339,7 +339,7 @@ async function loadHereFleetNew(addParameter=""){
   let fahrzeug = vehicleTypes.find (fahrzeug => fahrzeug.VehicleType == routingdata.vehicleType);
     
   var HereTelematicsParameter = {
-        "mode": "fastest;"+fahrzeug.Mode+";traffic:enabled",
+        "mode": "fastest;"+fahrzeug.Mode+";traffic:disabled",
         "height": fahrzeug.Height + "m",
         "width": fahrzeug.Width + "m",
         "length": fahrzeug.Length + "m",
