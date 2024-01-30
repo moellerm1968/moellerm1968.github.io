@@ -15,8 +15,8 @@ var routingdata = {
   addParam2: '&algopts=truckIntersectionDelaySpeedCat5MSec:2000&speedFcCat=80,80,80,75,65,45,25,10;60,60,60,60,60,45,25,10;60,60,60,60,60,45,25,10;50,50,50,50,47,30,12,10;30,30,30,30,19,15,11,10;,,,,,,,'
 };
 
-var vehicleTypes =[ 
-  { 
+var vehicleTypes =[
+  {
       "VehicleType": 1,
       "Description": "Transporter <= 2,8 t",
       "Height": 3.35,
@@ -28,10 +28,10 @@ var vehicleTypes =[
       "MaxAllSpeed": 130,
       "TollVehicleType": 2,
       "Mode": "car",
-      "speedFcCat": "117,115,107,87,62,38,18,10;115,111,93,87,62,38,17,10;111,107,86,83,61,37,15,10;60,60,60,60,56,36,14,10;36,36,36,36,23,18,13,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "110,109,101,82,58,36,17,10;109,104,87,82,58,36,16,10;104,101,81,78,57,35,15,10;56,56,56,56,53,34,13,10;36,36,36,36,23,18,13,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
     },
-    { 
+    {
       "VehicleType": 2,
       "Description": "Transp>2,8 t<=3,5 t",
       "Height": 2.57,
@@ -43,7 +43,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 130,
       "TollVehicleType": 2,
       "Mode": "car",
-      "speedFcCat": "116,114,106,86,61,38,18,10;114,110,92,86,61,38,17,10;110,106,85,83,60,37,15,10;59,59,59,59,55,35,14,10;35,35,35,35,22,18,13,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "108,107,99,80,57,35,17,10;107,102,86,80,57,35,15,10;102,99,79,77,56,34,14,10;55,55,55,55,52,33,13,10;33,33,33,33,21,17,12,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
     },
     {
@@ -58,7 +58,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 80,
       "TollVehicleType": 9,
       "Mode": "truck",
-      "speedFcCat": "78,78,78,73,63,44,24,10;58,58,58,58,58,44,24,10;58,58,58,58,58,44,24,10;49,49,49,49,46,29,12,10;29,29,29,29,18,15,11,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
     {
@@ -73,7 +73,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 80,
       "TollVehicleType": 3,
       "Mode": "truck",
-      "speedFcCat": "74,74,74,69,60,41,23,10;55,55,55,55,55,41,23,10;55,55,55,55,55,41,23,10;46,46,46,46,43,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "74,74,74,70,60,42,23,10;56,56,56,56,56,42,23,10;56,56,56,56,56,42,23,10;47,47,47,47,44,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
     {
@@ -88,10 +88,10 @@ var vehicleTypes =[
       "MaxAllSpeed": 80,
       "TollVehicleType": 3,
       "Mode": "truck",
-      "speedFcCat": "74,74,74,69,60,41,23,10;55,55,55,55,55,41,23,10;55,55,55,55,55,41,23,10;46,46,46,46,43,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "75,75,75,71,61,42,24,10;56,56,56,56,56,42,24,10;56,56,56,56,56,42,24,10;47,47,47,47,44,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
-    { 
+    {
       "VehicleType": 6,
       "Description": "Lkw > 23 t",
       "Height": 4.0,
@@ -103,9 +103,9 @@ var vehicleTypes =[
       "MaxAllSpeed": 80,
       "TollVehicleType": 3,
       "Mode": "truck",
-      "speedFcCat": "74,74,74,69,60,41,23,10;55,55,55,55,55,41,23,10;55,55,55,55,55,41,23,10;46,46,46,46,43,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "72,72,72,68,59,41,23,10;54,54,54,54,54,41,23,10;54,54,54,54,54,41,23,10;45,45,45,45,42,27,11,10;27,27,27,27,17,14,10,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
-    },];
+    },]; 
     
 var Duration = "0,0 h"
 var Laenge = "0,0 km"
