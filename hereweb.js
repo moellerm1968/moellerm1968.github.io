@@ -28,7 +28,7 @@ var vehicleTypes =[
       "MaxAllSpeed": 130,
       "TollVehicleType": 2,
       "Mode": "car",
-      "speedFcCat": "110,109,101,82,58,36,17,10;109,104,87,82,58,36,16,10;104,101,81,78,57,35,15,10;56,56,56,56,53,34,13,10;36,36,36,36,23,18,13,10;,,,,,,,", // Nur Fleet Telematics
+      "speedFcCat": "108,107,99,80,57,35,17,10;107,102,86,80,57,35,15,10;102,99,79,77,56,34,14,10;55,55,55,55,52,33,13,10;33,33,33,33,21,17,12,10;,,,,,,,", // Nur Fleet Telematics
       "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
     },
     {
