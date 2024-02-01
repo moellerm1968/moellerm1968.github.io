@@ -112,7 +112,7 @@ var Laenge = "0,0 km"
 
 // set up containers for the map  + panel
 var mapContainer = document.getElementById('map');
-var platform = new H.service.Platform({apikey: 'Is-9tu_HmtJnc-hoBx5MAPXTE7vjRKZGbtKMjO56Kwk'});
+var platform = new H.service.Platform({apikey: 'gET017F3PS1alYkXek5T9nAaTOXycH6bKRzcrOG_6eE'});
 var defaultLayers = platform.createDefaultLayers();
 
 // Step 2: initialize a map - this map is centered over Berlin
