@@ -16,95 +16,110 @@ var routingdata = {
 };
 
 var vehicleTypes =[
-  {
-      "VehicleType": 1,
-      "Description": "Transporter <= 2,8 t",
-      "Height": 3.35,
-      "Width": 2.28,
-      "Length": 5.78,
-      "AxlesCount": 2,
-      "MaxAllWeigth": 2.8,
-      "EmissionType": 6,
-      "MaxAllSpeed": 130,
-      "TollVehicleType": 2,
-      "Mode": "car",
-      "speedFcCat": "108,107,99,80,57,35,17,10;107,102,86,80,57,35,15,10;102,99,79,77,56,34,14,10;55,55,55,55,52,33,13,10;33,33,33,33,21,17,12,10;,,,,,,,", // Nur Fleet Telematics
-      "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
+    {
+        "VehicleType": 1,
+        "Description": "Transporter <= 2,8 t",
+        "Height": 3.35,
+        "Width": 2.28,
+        "Length": 5.78,
+        "AxlesCount": 2,
+        "MaxAllWeigth": 2.8,
+        "EmissionType": 6,
+        "MaxAllSpeed": 130,
+        "TollVehicleType": 2,
+        "Mode": "car",
+        "speedFcCat": "108,107,99,80,57,35,17,10;107,102,86,80,57,35,15,10;102,99,79,77,56,34,14,10;55,55,55,55,52,33,13,10;33,33,33,33,21,17,12,10;,,,,,,,", // Nur Fleet Telematics
+        "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
     },
     {
-      "VehicleType": 2,
-      "Description": "Transp>2,8 t<=3,5 t",
-      "Height": 2.57,
-      "Width": 2.55,
-      "Length": 7.12,
-      "AxlesCount": 2,
-      "MaxAllWeigth": 3.5,
-      "EmissionType": 6,
-      "MaxAllSpeed": 130,
-      "TollVehicleType": 2,
-      "Mode": "car",
-      "speedFcCat": "108,107,99,80,57,35,17,10;107,102,86,80,57,35,15,10;102,99,79,77,56,34,14,10;55,55,55,55,52,33,13,10;33,33,33,33,21,17,12,10;,,,,,,,", // Nur Fleet Telematics
-      "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
+        "VehicleType": 2,
+        "Description": "Transp>2,8 t<=3,5 t",
+        "Height": 2.57,
+        "Width": 2.55,
+        "Length": 7.12,
+        "AxlesCount": 2,
+        "MaxAllWeigth": 3.5,
+        "EmissionType": 6,
+        "MaxAllSpeed": 130,
+        "TollVehicleType": 2,
+        "Mode": "car",
+        "speedFcCat": "107,106,98,80,57,35,16,10;106,101,85,80,57,35,15,10;101,98,78,76,56,34,14,10;55,55,55,55,51,33,13,10;33,33,33,33,21,16,12,10;,,,,,,,", // Nur Fleet Telematics
+        "algopts": "truckIntersectionDelaySpeedCat5MSec:1000" // Nur Fleet Telematics
     },
     {
-      "VehicleType": 3,
-      "Description": "Lkw <= 7,5t",
-      "Height": 3.35,
-      "Width": 2.55,
-      "Length": 7.9,
-      "AxlesCount": 2,
-      "MaxAllWeigth": 7.49,
-      "EmissionType": 6,
-      "MaxAllSpeed": 80,
-      "TollVehicleType": 9,
-      "Mode": "truck",
-      "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
-      "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+        "VehicleType": 3,
+        "Description": "Lkw <= 7,5t",
+        "Height": 3.35,
+        "Width": 2.55,
+        "Length": 7.9,
+        "AxlesCount": 2,
+        "MaxAllWeigth": 7.49,
+        "EmissionType": 6,
+        "MaxAllSpeed": 80,
+        "TollVehicleType": 9,
+        "Mode": "truck",
+        "speedFcCat": "76,76,76,71,62,43,24,10;57,57,57,57,57,43,24,10;57,57,57,57,57,43,24,10;48,48,48,48,45,29,11,10;29,29,29,29,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+        "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
     {
-      "VehicleType": 4,
-      "Description": "Lkw >7,5 t <=11,99 t",
-      "Height": 3.4,
-      "Width": 2.55,
-      "Length": 9.18,
-      "AxlesCount": 2,
-      "MaxAllWeigth": 11.99,
-      "EmissionType": 6,
-      "MaxAllSpeed": 80,
-      "TollVehicleType": 3,
-      "Mode": "truck",
-      "speedFcCat": "74,74,74,70,60,42,23,10;56,56,56,56,56,42,23,10;56,56,56,56,56,42,23,10;47,47,47,47,44,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
-      "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+        "VehicleType": 4,
+        "Description": "Lkw >7,5 t <=11,99 t",
+        "Height": 3.4,
+        "Width": 2.55,
+        "Length": 9.18,
+        "AxlesCount": 2,
+        "MaxAllWeigth": 11.99,
+        "EmissionType": 6,
+        "MaxAllSpeed": 80,
+        "TollVehicleType": 3,
+        "Mode": "truck",
+        "speedFcCat": "74,74,74,70,60,42,23,10;56,56,56,56,56,42,23,10;56,56,56,56,56,42,23,10;47,47,47,47,44,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+        "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
     {
-      "VehicleType": 5,
-      "Description": "Lkw >=12 t <=23 t",
-      "Height": 4.0,
-      "Width": 2.55,
-      "Length": 9.95,
-      "AxlesCount": 2,
-      "MaxAllWeigth": 23,
-      "EmissionType": 6,
-      "MaxAllSpeed": 80,
-      "TollVehicleType": 3,
-      "Mode": "truck",
-      "speedFcCat": "75,75,75,71,61,42,24,10;56,56,56,56,56,42,24,10;56,56,56,56,56,42,24,10;47,47,47,47,44,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
-      "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+        "VehicleType": 5,
+        "Description": "Lkw >=12 t <=17,99 t",
+        "Height": 3.45,
+        "Width": 2.55,
+        "Length": 9.12,
+        "AxlesCount": 2,
+        "MaxAllWeigth": 14,
+        "EmissionType": 6,
+        "MaxAllSpeed": 80,
+        "TollVehicleType": 3,
+        "Mode": "truck",
+        "speedFcCat": "78,78,78,74,64,44,25,10;59,59,59,59,59,44,25,10;59,59,59,59,59,44,25,10;49,49,49,49,46,29,12,10;29,29,29,29,19,15,11,10;,,,,,,,", // Nur Fleet Telematics
+        "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },
     {
-      "VehicleType": 6,
-      "Description": "Lkw > 23 t",
-      "Height": 4.0,
-      "Width": 2.5,
-      "Length": 9.6,
-      "AxlesCount": 3, //29% have 5 axles, rest 3axles
-      "MaxAllWeigth": 26, //29% (type 71) have 40tons, rest mainly 26tons
-      "EmissionType": 6,
-      "MaxAllSpeed": 80,
-      "TollVehicleType": 3,
-      "Mode": "truck",
-      "speedFcCat": "72,72,72,68,59,41,23,10;54,54,54,54,54,41,23,10;54,54,54,54,54,41,23,10;45,45,45,45,42,27,11,10;27,27,27,27,17,14,10,10;,,,,,,,", // Nur Fleet Telematics
-      "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+        "VehicleType": 6,
+        "Description": "Lkw  >=18 t <=23 t",
+        "Height": 4.0,
+        "Width": 2.55,
+        "Length": 9.95,
+        "AxlesCount": 2,
+        "MaxAllWeigth": 23,
+        "EmissionType": 6,
+        "MaxAllSpeed": 80,
+        "TollVehicleType": 3,
+        "Mode": "truck",
+        "speedFcCat": "74,74,74,70,60,42,23,10;56,56,56,56,56,42,23,10;56,56,56,56,56,42,23,10;47,47,47,47,44,28,11,10;28,28,28,28,18,14,10,10;,,,,,,,", // Nur Fleet Telematics
+        "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
+    },
+    {
+        "VehicleType": 7,
+        "Description": "Lkw > 23 t",
+        "Height": 4.0,
+        "Width": 2.5,
+        "Length": 9.6,
+        "AxlesCount": 3, //29% have 5 axles, rest 3axles
+        "MaxAllWeigth": 26, //29% (type 71) have 40tons, rest mainly 26tons
+        "EmissionType": 6,
+        "MaxAllSpeed": 80,
+        "TollVehicleType": 3,
+        "Mode": "truck",
+        "speedFcCat": "72,72,72,68,59,41,23,10;54,54,54,54,54,41,23,10;54,54,54,54,54,41,23,10;45,45,45,45,42,27,11,10;27,27,27,27,17,14,10,10;,,,,,,,", // Nur Fleet Telematics
+        "algopts": "truckIntersectionDelaySpeedCat5MSec:2000" // Nur Fleet Telematics
     },]; 
     
 var Duration = "0,0 h"
