@@ -167,10 +167,10 @@ routes.addEventListener('tap', function (evt) {
 // mit Fahrzeugspezifischen Parametern 
 loadHereFleetNew("yes").then((ergebnis) => show(ergebnis, 'black',3));
 // mit Globalen Parametern 
-//loadHereFleetNew(routingdata.addParam).then((ergebnis) => show(ergebnis, 'green',1));
+loadHereFleetNew(routingdata.addParam).then((ergebnis) => show(ergebnis, 'green',1));
 // ohne Parameter
-//loadHereFleetNew().then((ergebnis) => show(ergebnis, 'red',2));
-//loadPTV(routingdata.origin, routingdata.destination, routingdata.departureTime).then((ergebnis) => showPTV(ergebnis, 'yellow',4));
+loadHereFleetNew().then((ergebnis) => show(ergebnis, 'red',2));
+loadPTV(routingdata.origin, routingdata.destination, routingdata.departureTime).then((ergebnis) => showPTV(ergebnis, 'yellow',4));
 calculateRoutesNew (platform);
 
 function show(route, colour='blue', pos){
